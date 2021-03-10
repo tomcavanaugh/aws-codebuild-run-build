@@ -153,8 +153,8 @@ function inputs2Parameters(inputs) {
     envPassthrough = [],
   } = inputs;
 
-  const sourceTypeOverride = "GITHUB";
-  const sourceLocationOverride = `https://github.com/${owner}/${repo}.git`;
+  // const sourceTypeOverride = "GITHUB";
+  // const sourceLocationOverride = `https://github.com/${owner}/${repo}.git`;
 
   const environmentVariablesOverride = Object.entries(process.env)
     .filter(
@@ -167,8 +167,8 @@ function inputs2Parameters(inputs) {
   return {
     projectName,
     sourceVersion,
-    sourceTypeOverride,
-    sourceLocationOverride,
+    // sourceTypeOverride,
+    // sourceLocationOverride,
     buildspecOverride,
     environmentVariablesOverride,
   };
